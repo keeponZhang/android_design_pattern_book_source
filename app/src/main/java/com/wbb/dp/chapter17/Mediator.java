@@ -1,0 +1,14 @@
+package com.wbb.dp.chapter17;
+
+/**
+ * @author vico
+ * @date 2018-12-02
+ */
+public abstract class Mediator {
+    /**
+     * 同事对象改变时通知中介者的方法
+     * 在同事对象改变时由中介者去通知其他的同事对象
+     * @param c 同事对象
+     */
+    public abstract void changed(Colleague c);
+}

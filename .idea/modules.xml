@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="simple_imageloader/app" />
+      <module fileurl="file://$PROJECT_DIR$/simple_imageloader.iml" filepath="$PROJECT_DIR$/simple_imageloader.iml" group="simple_imageloader" />
+      <module fileurl="file://$PROJECT_DIR$/simple_net_demo/simple_net_demo.iml" filepath="$PROJECT_DIR$/simple_net_demo/simple_net_demo.iml" group="simple_imageloader/simple_net_demo" />
+    </modules>
+  </component>
+</project>
