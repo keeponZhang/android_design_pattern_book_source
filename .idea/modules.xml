@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="simple_imageloader/app" />
-      <module fileurl="file://$PROJECT_DIR$/simple_imageloader.iml" filepath="$PROJECT_DIR$/simple_imageloader.iml" group="simple_imageloader" />
-      <module fileurl="file://$PROJECT_DIR$/simple_net_demo/simple_net_demo.iml" filepath="$PROJECT_DIR$/simple_net_demo/simple_net_demo.iml" group="simple_imageloader/simple_net_demo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android_design_pattern_book_source.iml" filepath="$PROJECT_DIR$/.idea/modules/android_design_pattern_book_source.iml" group="android_design_pattern_book_source" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="android_design_pattern_book_source/app" />
+      <module fileurl="file://$PROJECT_DIR$/simple_net_demo/simple_net_demo.iml" filepath="$PROJECT_DIR$/simple_net_demo/simple_net_demo.iml" group="android_design_pattern_book_source/simple_net_demo" />
     </modules>
   </component>
 </project>

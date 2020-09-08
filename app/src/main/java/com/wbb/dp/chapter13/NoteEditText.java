@@ -10,7 +10,7 @@ import android.widget.EditText;
  * @author vico
  * @date 2018-11-29
  */
-public class NoteEditText extends EditText {
+public class NoteEditText extends android.support.v7.widget.AppCompatEditText {
     public NoteEditText(Context context) {
         this(context, null);
     }

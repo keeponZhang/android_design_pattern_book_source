@@ -1,5 +1,6 @@
 package com.wbb.dp.chapter11;
 
+import android.app.Activity;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.os.Bundle;
@@ -10,7 +11,7 @@ import android.widget.Button;
 
 import com.simple.net.demo.R;
 
-public class DrawActivity extends AppCompatActivity implements View.OnClickListener {
+public class DrawActivity extends Activity implements View.OnClickListener {
 
     private DrawCanvas mCanvas;//绘制画布
     private DrawPath mPath;//路径绘制命令

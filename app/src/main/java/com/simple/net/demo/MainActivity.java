@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
 import org.simple.imageloader.cache.DoubleCache;
@@ -15,7 +16,7 @@ import org.simple.imageloader.policy.ReversePolicy;
 /**
  * @author mrsimple
  */
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends AppCompatActivity {
 
     ListView myListView;
 

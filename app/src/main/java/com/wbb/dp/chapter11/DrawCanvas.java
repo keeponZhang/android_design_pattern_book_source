@@ -111,6 +111,7 @@ public class DrawCanvas extends SurfaceView implements SurfaceHolder.Callback {
                         c.drawColor(0, PorterDuff.Mode.CLEAR);
 
                         canvas.drawColor(0, PorterDuff.Mode.CLEAR);
+                        //这里很重要，把surface的viewholder传进去了
                         mInvoker.execute(c);
                         canvas.drawBitmap(mBitmap, 0, 0, null);
                     } finally {
