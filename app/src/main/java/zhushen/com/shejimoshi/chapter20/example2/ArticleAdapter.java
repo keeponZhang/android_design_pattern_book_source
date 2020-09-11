@@ -7,9 +7,10 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.TextView;
 
+import com.simple.net.demo.R;
+
 import java.util.List;
 
-import zhushen.com.shejimoshi.R;
 
 /**
  * Created by Zhushen on 2018/6/4.

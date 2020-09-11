@@ -8,10 +8,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.simple.net.demo.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import zhushen.com.shejimoshi.R;
 
 public class TextActivity extends AppCompatActivity implements View.OnClickListener {
     private EditText mNodeEditText;
@@ -56,6 +57,8 @@ public class TextActivity extends AppCompatActivity implements View.OnClickListe
                 saveMemoto(createMemotoFromEdit());
                 makeToast("save :");
                 break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + v.getId());
         }
     }
 

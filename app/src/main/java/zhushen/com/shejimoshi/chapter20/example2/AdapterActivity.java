@@ -5,10 +5,11 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.simple.net.demo.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import zhushen.com.shejimoshi.R;
 
 public class AdapterActivity extends AppCompatActivity {
     RecyclerView recyclerView;

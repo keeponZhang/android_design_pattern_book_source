@@ -10,9 +10,10 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
+import com.simple.net.demo.R;
+
 import java.nio.channels.NonReadableChannelException;
 
-import zhushen.com.shejimoshi.R;
 
 import static android.view.MotionEvent.ACTION_DOWN;
 import static android.view.MotionEvent.ACTION_MOVE;
@@ -133,6 +134,8 @@ public class DrawActivity extends AppCompatActivity implements View.OnClickListe
                     btnRedo.setEnabled(true);
                     btnUndo.setEnabled(true);
                     break;
+                default:
+                    throw new IllegalStateException("Unexpected value: " + event.getAction());
             }
 
             return false;

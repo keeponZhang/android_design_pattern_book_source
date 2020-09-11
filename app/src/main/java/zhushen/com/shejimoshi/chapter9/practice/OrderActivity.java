@@ -6,7 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import zhushen.com.shejimoshi.R;
+import com.simple.net.demo.R;
+
 
 public class OrderActivity extends AppCompatActivity {
     private Button sendBtn;

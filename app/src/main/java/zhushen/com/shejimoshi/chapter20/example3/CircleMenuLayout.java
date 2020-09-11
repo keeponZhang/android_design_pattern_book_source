@@ -2,6 +2,7 @@ package zhushen.com.shejimoshi.chapter20.example3;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,7 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import zhushen.com.shejimoshi.R;
+import com.simple.net.demo.R;
 
 /**
  * Created by Zhushen on 2018/6/4.
@@ -101,9 +102,10 @@ public class CircleMenuLayout extends ViewGroup {
         if(widthMode != MeasureSpec.EXACTLY
                 ||heightMode != MeasureSpec.EXACTLY){
             resWidth = getSuggestedMinimumWidth();
-//            resWidth = resWidth==0?getDefaultWidth():resWidth;
+            Log.e("TAG", "CircleMenuLayout measureMyself resWidth resWidth:"+resWidth);
+           resWidth = resWidth==0?200:resWidth;
             resHeight = getSuggestedMinimumHeight();
-//            resHeight = resHeight==0?getDefaultHeight():resHeight;
+           resHeight = resHeight==0?200+100:resHeight;
         }else {
             resWidth = resHeight = Math.min(width,height);
         }
@@ -118,6 +120,7 @@ public class CircleMenuLayout extends ViewGroup {
         for(int i=0;i<count;i++){
             final View child = getChildAt(i);
             if(child.getVisibility() == GONE){
+                Log.e("TAG", "CircleMenuLayout measureChildViews child.getVisibility() == GONE:");
                 continue;
             }
             int makeMeasureSpec = -1;
@@ -130,6 +133,7 @@ public class CircleMenuLayout extends ViewGroup {
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
         final int childCount = getChildCount();
+        Log.e("TAG", "CircleMenuLayout onLayout:");
         int left,top;
         int itemWidth = (int) (mRadious * RADIO_DEFAULT_CHILD_DIMENSION);
         float angleDelay = 360/ childCount;
@@ -138,6 +142,7 @@ public class CircleMenuLayout extends ViewGroup {
             if(child.getVisibility() == GONE){
                 continue;
             }
+            Log.e("TAG", "for CircleMenuLayout onLayout:");
             mStartAngle %= 360;
             float distanceFromCenter = mRadious / 2f - itemWidth / 2 - mPadding;
             left = mRadious /2 + (int)Math.round(distanceFromCenter* Math.cos(Math.toRadians(mStartAngle)) -1 / 2f * itemWidth) ;

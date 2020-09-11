@@ -1,6 +1,7 @@
 package zhushen.com.shejimoshi.leetcode;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 /**
  * Created by Zhushen on 2018/12/4.
@@ -22,7 +23,12 @@ public class carFleet {
         for (int i = 0; i < N; i++) {
             cars[i] = new double[]{position[i], (double) (target - position[i]) / speed[i]};
         }
-        Arrays.sort(cars, (a, b) -> Double.compare(a[0], b[0]));
+        Arrays.sort(cars, new Comparator<double[]>() {
+            @Override
+            public int compare(double[] a, double[] b) {
+                return Double.compare(a[0], b[0]);
+            }
+        });
         double cur = 0;
 
         //从后往前比较

@@ -128,6 +128,6 @@ public final class SimpleDagger {
 
         Log.e("", "### find adapter : " + adapter);
 
-        return adapter == null ? new NullAdapter() : adapter;
+        return adapter == null ? new NullAdapter() : (InjectAdapter<T>) adapter;
     }
 }

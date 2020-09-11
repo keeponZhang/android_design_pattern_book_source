@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "org.simple.eventbus.demo"
-        minSdkVersion 16
+        minSdkVersion 26
         targetSdkVersion 27
     }
 
@@ -16,11 +16,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+
 }
 
 dependencies {
     compile project(':simple_net_demo')
-    compile 'com.android.support:support-v4:27.0.2'
     compile 'com.android.support:appcompat-v7:27.0.2'
-     implementation files('C:\\Program Files\\Java\\jdk1.8.0_212\\jre\\lib\\rt.jar')
+    compile 'com.android.support:recyclerview-v7:27.0.2'
+    /*需要配置android studio的jre*/
+    implementation files('C:\\Program Files\\Java\\jdk1.8.0_212\\jre\\lib\\rt.jar')
 }

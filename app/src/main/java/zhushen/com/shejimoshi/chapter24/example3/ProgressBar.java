@@ -8,7 +8,7 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 
-import zhushen.com.shejimoshi.R;
+import com.simple.net.demo.R;
 
 /**
  * Created by Zhushen on 2018/12/11.
@@ -30,7 +30,7 @@ public class ProgressBar extends View {
 
     public ProgressBar(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        TypedArray a = context.obtainStyledAttributes(attrs,R.styleable.ProgressBar,defStyleAttr,0);
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ProgressBar,defStyleAttr,0);
         style = a.getInt(R.styleable.ProgressBar_style,BaseProgressBar.CIRCLE);
 
         if(style == BaseProgressBar.HORIZONTAL){

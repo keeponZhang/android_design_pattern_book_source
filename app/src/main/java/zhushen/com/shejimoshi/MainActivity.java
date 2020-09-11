@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.simple.net.demo.R;
+
 import zhushen.com.shejimoshi.chapter11.practice.DrawActivity;
 import zhushen.com.shejimoshi.chapter13.practice.TextActivity;
 import zhushen.com.shejimoshi.chapter20.example3.CircleMenuActivity;

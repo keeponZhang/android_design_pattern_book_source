@@ -6,17 +6,19 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Toast;
 
-import zhushen.com.shejimoshi.R;
+import com.simple.net.demo.R;
+
 
 public class CircleMenuActivity extends AppCompatActivity {
     private CircleMenuLayout circleMenuLayout;
 
-    private String[] texts = new String[]{"test1","test2","test3","test4"};
+    private String[] texts = new String[]{"test1","test2","test3","test4","test5"};
     private int[] images = new int[]{
             R.mipmap.ic_launcher,
             R.mipmap.ic_launcher,
             R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher
+            R.mipmap.ic_launcher,
+    R.mipmap.ic_launcher
     };
 
     @Override
